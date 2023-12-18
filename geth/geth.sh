@@ -14,6 +14,8 @@ exec geth \
   --http \
   --http.addr=0.0.0.0 \
   --http.vhosts=* \
+  --http.corsdomain=* \
+  --http.api=admin,engine,net,eth,web3,debug \
   --authrpc.vhosts="*" \
   --authrpc.addr=0.0.0.0 \
   --port=${EL_P2P_PORT:-30303} \

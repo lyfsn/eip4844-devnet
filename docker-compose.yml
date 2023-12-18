@@ -10,7 +10,7 @@ services:
       context: ./geth
       dockerfile: Dockerfile.geth
     ports:
-      - '8545:8545'
+      - '20545:8545'
       - 0.0.0.0:${EL_P2P_PORT:-30303}:${EL_P2P_PORT:-30303}/tcp
       - 0.0.0.0:${EL_P2P_PORT:-30303}:${EL_P2P_PORT:-30303}/udp
     environment:
